@@ -1,3 +1,4 @@
+import pizzaStore.ChicagoPizzaStore;
 import pizzaStore.NYPizzaStore;
 import pizzaStore.PizzaStore;
 import utils.PizzaType;
@@ -10,6 +11,9 @@ public class Client {
         PizzaStore pizzaStore = new NYPizzaStore();
         pizzaStore.orderPizza(PizzaType.ORIGINAL);
         pizzaStore.orderPizza(PizzaType.CHEESE);
+
+        pizzaStore = new ChicagoPizzaStore();
+        pizzaStore.orderPizza(PizzaType.ORIGINAL);
 
 
     }

@@ -1,9 +1,17 @@
 package pizza;
 
+import ingredientsFactory.IngredientsFactory;
+
 /**
  * Created by IKomarov on 31.12.2014.
  */
 public abstract class Pizza {
+    public void prepare(IngredientsFactory factory){
+        factory.createMeat();
+        factory.createSouce();
+        factory.createTomatos();
+        factory.createVegitables();
+    };
     public void bake() {
         System.out.println("Bake Pizza");
     }

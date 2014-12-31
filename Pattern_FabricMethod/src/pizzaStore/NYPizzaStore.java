@@ -1,8 +1,8 @@
 package pizzaStore;
 
-import pizza.NyCheesePizza;
-import pizza.NyOriginalPizza;
-import pizza.NyPizza;
+import pizza.NY.NyCheesePizza;
+import pizza.NY.NyOriginalPizza;
+import pizza.NY.NyPizza;
 import pizza.Pizza;
 import utils.PizzaType;
 
@@ -14,7 +14,7 @@ public class NYPizzaStore extends PizzaStore {
     @Override
     Pizza fabricMethod_CreatePizza(PizzaType type) {
         Pizza nyPizza;
-        System.out.println("Create NY pizza style");
+        System.out.println(" - - - -Start to create NY pizza style  - - - ");
 
         switch (type) {
             case ORIGINAL:
